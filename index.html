@@ -9,7 +9,7 @@
         body { background: #f8fafc; font-family: 'Inter', sans-serif; }
         .hero-gradient { background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%); }
         .post-card { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
-        .post-card:hover { transform: translateY(-10px); shadow: 0 25px 50px -12px rgba(0,0,0,0.15); }
+        .post-card:hover { transform: translateY(-10px); box-shadow: 0 25px 50px -12px rgba(0,0,0,0.15); }
     </style>
 </head>
 <body class="antialiased text-gray-900">
@@ -28,14 +28,13 @@
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-            
             <a href="diamond-state-vs-grand-canyon-state-unveiling-the-unique-charms-of-arkansas-and-arizona.html" class="post-card group bg-white rounded-3xl overflow-hidden shadow-sm border border-gray-100">
                 <div class="p-8">
                     <div class="text-blue-600 font-bold text-xs uppercase mb-3 tracking-widest">USA Comparison</div>
                     <h3 class="text-2xl font-black text-gray-900 mb-4 group-hover:text-blue-700 transition-colors">
                         Arkansas vs Arizona: The Ultimate Showdown
                     </h3>
-                    <p class="text-gray-500 line-clamp-3 mb-6">
+                    <p class="text-gray-500 line-clamp-3 mb-6 text-sm text-left">
                         Explore the deep differences between the Natural State and the Grand Canyon State in this expert analysis...
                     </p>
                     <div class="flex items-center text-blue-600 font-extrabold text-sm uppercase">
@@ -43,7 +42,8 @@
                     </div>
                 </div>
             </a>
-            </div>
+
+        </div>
     </main>
 
     <footer class="py-12 border-t border-gray-200 text-center text-gray-400 text-sm">
