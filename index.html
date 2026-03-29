@@ -3,81 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Muattar Tech | Intelligence Hub</title>
+    <title>Daily Trends & Insights | Muattar Tech</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
     <style>
-        body { background-color: #0f172a; font-family: 'Plus Jakarta Sans', sans-serif; color: #f1f5f9; }
-        .hero-section {
-            background: radial-gradient(circle at top right, #1e3a8a 0%, #0f172a 60%);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-        }
-        .depth-card {
-            background: rgba(30, 41, 59, 0.5);
-            backdrop-filter: blur(16px);
-            border: 1px solid rgba(255, 255, 255, 0.08);
-            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-        .depth-card:hover {
-            transform: translateY(-10px);
-            border-color: #3b82f6;
-            background: rgba(30, 41, 59, 0.8);
-            box-shadow: 0 30px 60px -12px rgba(0, 0, 0, 0.5);
-        }
-        .accent-gradient {
-            background: linear-gradient(135deg, #60a5fa 0%, #3b82f6 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
+        body { background: #f1f5f9; font-family: 'Inter', sans-serif; }
+        .hero-gradient { background: linear-gradient(135deg, #0f172a 0%, #1e40af 100%); }
+        .post-card { transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+        .post-card:hover { transform: translateY(-12px); box-shadow: 0 40px 80px -15px rgba(0,0,0,0.1); }
     </style>
 </head>
-<body class="antialiased">
+<body class="antialiased text-gray-900">
 
-    <header class="hero-section pt-32 pb-40 px-6 text-center">
-        <div class="max-w-5xl mx-auto">
-            <span class="inline-block px-4 py-1.5 mb-8 text-[10px] font-black tracking-[0.4em] text-blue-400 uppercase bg-blue-400/10 rounded-lg border border-blue-400/20">
-                System Status: Operational
-            </span>
-            <h1 class="text-6xl md:text-8xl font-extrabold mb-8 tracking-tighter leading-none">
-                Smart <span class="accent-gradient">Automation</span>.<br>Real Insights.
-            </h1>
-            <p class="text-lg md:text-xl text-slate-400 max-w-2xl mx-auto font-light leading-relaxed">
-                Muattar Waris's automated intelligence engine, monitoring global trends and delivering expert analysis 24/7.
+    <header class="hero-gradient text-white py-24 px-6 text-center relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
+            <svg viewBox="0 0 100 100" class="w-full h-full"><circle cx="50" cy="50" r="40" stroke="white" stroke-width="0.5" fill="none"/></svg>
+        </div>
+        <div class="relative z-10">
+            <h1 class="text-6xl md:text-8xl font-black mb-6 tracking-tight italic">TRENDS<span class="text-blue-400 font-light block not-italic text-3xl md:text-5xl mt-2 tracking-widest">DAILY INSIGHTS</span></h1>
+            <p class="text-lg md:text-xl text-blue-100 font-medium max-w-3xl mx-auto border-t border-blue-500/30 pt-6">
+                Automated Expert Analysis on Global Trending Topics. Powered by Muattar's AI Engine.
             </p>
         </div>
     </header>
 
-    <main class="max-w-7xl mx-auto -mt-20 px-6 pb-32">
-        <div class="flex items-center justify-between mb-12">
-            <h2 class="text-2xl font-bold tracking-tight text-white/90 italic">Live Analysis Feed</h2>
-            <div class="h-[1px] flex-1 mx-8 bg-white/10"></div>
+    <main class="max-w-7xl mx-auto py-20 px-6">
+        <div class="flex items-center justify-between mb-16 border-b-4 border-blue-600 pb-4">
+            <h2 class="text-4xl font-black text-slate-800 uppercase tracking-tighter italic">LATEST REPORTS</h2>
+            <div class="flex items-center space-x-2">
+                <span class="relative flex h-3 w-3"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span><span class="relative inline-flex rounded-full h-3 w-3 bg-blue-500"></span></span>
+                <span class="text-blue-600 font-black text-sm uppercase tracking-widest">Live Feed</span>
+            </div>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="posts-container">
-            <article class="depth-card rounded-[2rem] overflow-hidden p-8 flex flex-col justify-between min-h-[320px]">
-                <div>
-                    <div class="flex justify-between items-center mb-6">
-                        <span class="text-[10px] font-bold tracking-widest text-blue-500 uppercase">Architecture</span>
-                        <div class="h-1.5 w-1.5 rounded-full bg-blue-500 animate-pulse"></div>
-                    </div>
-                    <h3 class="text-2xl font-bold leading-tight mb-4 text-white">System Framework & Core Logic</h3>
-                    <p class="text-slate-400 text-sm line-clamp-3 leading-relaxed">
-                        An in-depth look at how Node.js and n8n integrate to create scalable, self-healing automation workflows.
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12" id="posts-container">
+            <a href="diamond-state-vs-grand-canyon-state-unveiling-the-unique-charms-of-arkansas-and-arizona.html" class="post-card group bg-white rounded-[2.5rem] overflow-hidden border border-slate-200 p-2">
+                <div class="p-8">
+                    <div class="inline-block bg-blue-50 text-blue-600 font-black text-[10px] uppercase mb-4 px-3 py-1 rounded-full">USA Comparison</div>
+                    <h3 class="text-2xl font-black text-slate-900 mb-4 group-hover:text-blue-600 transition-colors leading-tight">
+                        Arkansas vs Arizona: The Ultimate Showdown
+                    </h3>
+                    <p class="text-slate-500 line-clamp-3 mb-6 text-base leading-relaxed">
+                        Explore the deep differences between the Natural State and the Grand Canyon State in this expert analysis...
                     </p>
+                    <div class="flex items-center text-blue-600 font-black text-sm uppercase tracking-tighter">
+                        View Full Report <span class="ml-2 transition-transform group-hover:translate-x-3">→</span>
+                    </div>
                 </div>
-                <div class="mt-8 pt-6 border-t border-white/5">
-                    <a href="#" class="text-blue-400 font-bold text-sm flex items-center gap-2 hover:gap-4 transition-all uppercase tracking-tighter">
-                        View Analysis <span>→</span>
-                    </a>
-                </div>
-            </article>
+            </a>
         </div>
     </main>
 
-    <footer class="py-20 bg-slate-950/50 border-t border-white/5 text-center">
-        <p class="text-slate-500 text-[10px] font-black uppercase tracking-[0.5em]">
-            &copy; 2026 Dev-Automata Agency | Powered by Muattar
-        </p>
+    <footer class="py-16 bg-slate-900 text-center text-slate-500">
+        <p class="text-sm font-bold uppercase tracking-widest mb-2">&copy; 2026 Trends Daily Automation</p>
+        <p class="text-xs">Developed by Muattar Waris • Powered by Node.js & Gemini</p>
     </footer>
 
 </body>
